@@ -11,7 +11,6 @@
 		BFB5582421B709A200D2A6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB5582321B709A200D2A6A4 /* AppDelegate.swift */; };
 		BFB5582921B709A200D2A6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB5582721B709A200D2A6A4 /* Main.storyboard */; };
 		BFB5582B21B709A400D2A6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB5582A21B709A400D2A6A4 /* Assets.xcassets */; };
-		BFB5582E21B709A400D2A6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB5582C21B709A400D2A6A4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		BFB5582321B709A200D2A6A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB5582821B709A200D2A6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFB5582A21B709A400D2A6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BFB5582D21B709A400D2A6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB5582F21B709A400D2A6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				BFB5582721B709A200D2A6A4 /* Main.storyboard */,
-				BFB5582C21B709A400D2A6A4 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,7 +143,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB5582E21B709A400D2A6A4 /* LaunchScreen.storyboard in Resources */,
 				BFB5582B21B709A400D2A6A4 /* Assets.xcassets in Resources */,
 				BFB5582921B709A200D2A6A4 /* Main.storyboard in Resources */,
 			);
@@ -173,14 +169,6 @@
 				BFB5582821B709A200D2A6A4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BFB5582C21B709A400D2A6A4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFB5582D21B709A400D2A6A4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

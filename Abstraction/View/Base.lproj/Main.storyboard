@@ -25,11 +25,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Swift pic example" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-LL-hjr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swift pic example" translatesAutoresizingMaskIntoConstraints="NO" id="hpG-LL-hjr">
                                 <rect key="frame" x="67" y="192" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="W0m-LU-utm"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-UL-S4V">
-                                <rect key="frame" x="67" y="382" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-UL-S4V">
+                                <rect key="frame" x="67" y="382" width="221" height="199"/>
                                 <string key="text">Swift is more abstract than block code because block code is code already made for you just compacted into blocks while swift is more raw code. It is less abstract than Byte code.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -38,36 +41,37 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hpG-LL-hjr" firstAttribute="top" secondItem="bMN-Pd-LSk" secondAttribute="top" constant="172" id="4ju-l4-rEe"/>
-                            <constraint firstItem="hpG-LL-hjr" firstAttribute="centerX" secondItem="P6h-UL-S4V" secondAttribute="centerX" id="KM7-Sn-CkA"/>
-                            <constraint firstItem="bMN-Pd-LSk" firstAttribute="bottom" secondItem="P6h-UL-S4V" secondAttribute="bottom" constant="264" id="LwV-Gx-gTk"/>
-                            <constraint firstItem="hpG-LL-hjr" firstAttribute="leading" secondItem="bMN-Pd-LSk" secondAttribute="leading" constant="67" id="Xz5-37-gLe"/>
-                            <constraint firstItem="hpG-LL-hjr" firstAttribute="leading" secondItem="P6h-UL-S4V" secondAttribute="leading" id="hcC-B3-Nzh"/>
-                            <constraint firstItem="hpG-LL-hjr" firstAttribute="width" secondItem="P6h-UL-S4V" secondAttribute="width" id="jwC-jo-yYI"/>
-                            <constraint firstItem="P6h-UL-S4V" firstAttribute="top" secondItem="hpG-LL-hjr" secondAttribute="bottom" constant="62" id="qH6-uY-0KE"/>
-                            <constraint firstItem="bMN-Pd-LSk" firstAttribute="trailing" secondItem="P6h-UL-S4V" secondAttribute="trailing" constant="265" id="sOc-bR-09f"/>
-                            <constraint firstItem="hpG-LL-hjr" firstAttribute="centerX" secondItem="o3c-x4-j7Y" secondAttribute="centerX" id="yLF-CU-ta1"/>
+                            <constraint firstItem="P6h-UL-S4V" firstAttribute="leading" secondItem="hpG-LL-hjr" secondAttribute="leading" id="FxH-3Q-FP8"/>
+                            <constraint firstItem="hpG-LL-hjr" firstAttribute="leading" secondItem="bMN-Pd-LSk" secondAttribute="leading" constant="67" id="LVP-Lo-taO"/>
+                            <constraint firstItem="P6h-UL-S4V" firstAttribute="top" secondItem="hpG-LL-hjr" secondAttribute="bottom" constant="62" id="UVW-r2-QBR"/>
+                            <constraint firstItem="bMN-Pd-LSk" firstAttribute="bottom" secondItem="P6h-UL-S4V" secondAttribute="bottom" constant="86" id="ffZ-sJ-d4O"/>
+                            <constraint firstItem="hpG-LL-hjr" firstAttribute="top" secondItem="bMN-Pd-LSk" secondAttribute="top" constant="172" id="iQ5-mp-X5H"/>
+                            <constraint firstItem="hpG-LL-hjr" firstAttribute="centerX" secondItem="o3c-x4-j7Y" secondAttribute="centerX" id="ial-VM-Ms3"/>
+                            <constraint firstItem="bMN-Pd-LSk" firstAttribute="trailing" secondItem="P6h-UL-S4V" secondAttribute="trailing" constant="87" id="pNn-MD-Jls"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bMN-Pd-LSk"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ae6-7R-Vse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="133"/>
+            <point key="canvasLocation" x="1456.8" y="132.68365817091455"/>
         </scene>
         <!--BlockViewController-->
         <scene sceneID="6d0-fW-zvr">
             <objects>
-                <viewController title="BlockViewController" id="wHe-pL-C0l" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlockViewController" title="BlockViewController" id="wHe-pL-C0l" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="THA-1F-Lai">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="block code" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-6u-c11">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="block code" translatesAutoresizingMaskIntoConstraints="NO" id="kwS-6u-c11">
                                 <rect key="frame" x="67" y="185" width="241" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Block code is more abstract than Binary because it’s more complicated than on or off. It is less abstract than Byte." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUD-KP-u2Z">
-                                <rect key="frame" x="67" y="397" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block code is more abstract than Binary because it’s more complicated than on or off. It is less abstract than Byte." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUD-KP-u2Z">
+                                <rect key="frame" x="67" y="397" width="257" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="X0T-Sv-73F"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,36 +79,37 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kwS-6u-c11" firstAttribute="centerX" secondItem="IUD-KP-u2Z" secondAttribute="centerX" id="8vQ-UK-mbv"/>
-                            <constraint firstItem="IUD-KP-u2Z" firstAttribute="top" secondItem="kwS-6u-c11" secondAttribute="bottom" constant="84" id="A4G-DG-xoM"/>
-                            <constraint firstItem="kwS-6u-c11" firstAttribute="width" secondItem="IUD-KP-u2Z" secondAttribute="width" id="DkW-ff-jqX"/>
-                            <constraint firstItem="kwS-6u-c11" firstAttribute="centerX" secondItem="THA-1F-Lai" secondAttribute="centerX" id="Lk6-GO-RUL"/>
-                            <constraint firstItem="kwS-6u-c11" firstAttribute="leading" secondItem="IUD-KP-u2Z" secondAttribute="leading" id="ja2-uy-GFD"/>
-                            <constraint firstItem="3qm-6q-Q3u" firstAttribute="bottom" secondItem="IUD-KP-u2Z" secondAttribute="bottom" constant="249" id="rmA-lR-ElC"/>
-                            <constraint firstItem="kwS-6u-c11" firstAttribute="top" secondItem="3qm-6q-Q3u" secondAttribute="top" constant="165" id="v0T-hl-nGB"/>
-                            <constraint firstItem="3qm-6q-Q3u" firstAttribute="trailing" secondItem="IUD-KP-u2Z" secondAttribute="trailing" constant="265" id="wZH-bt-ffv"/>
-                            <constraint firstItem="kwS-6u-c11" firstAttribute="leading" secondItem="3qm-6q-Q3u" secondAttribute="leading" constant="67" id="xpN-o8-Mlj"/>
+                            <constraint firstItem="kwS-6u-c11" firstAttribute="leading" secondItem="3qm-6q-Q3u" secondAttribute="leading" constant="67" id="0cn-rl-t74"/>
+                            <constraint firstItem="3qm-6q-Q3u" firstAttribute="trailing" secondItem="IUD-KP-u2Z" secondAttribute="trailing" constant="51" id="6Ao-Kp-AZf"/>
+                            <constraint firstItem="3qm-6q-Q3u" firstAttribute="bottom" secondItem="IUD-KP-u2Z" secondAttribute="bottom" constant="180" id="9fN-1t-XhW"/>
+                            <constraint firstItem="kwS-6u-c11" firstAttribute="top" secondItem="3qm-6q-Q3u" secondAttribute="top" constant="165" id="JLX-Ak-9DL"/>
+                            <constraint firstItem="kwS-6u-c11" firstAttribute="leading" secondItem="IUD-KP-u2Z" secondAttribute="leading" id="MAb-0E-HU8"/>
+                            <constraint firstItem="IUD-KP-u2Z" firstAttribute="top" secondItem="kwS-6u-c11" secondAttribute="bottom" constant="84" id="dW9-Bq-Bxl"/>
+                            <constraint firstItem="kwS-6u-c11" firstAttribute="centerX" secondItem="THA-1F-Lai" secondAttribute="centerX" id="exU-rc-kpR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3qm-6q-Q3u"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJ3-Gb-E5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="133"/>
+            <point key="canvasLocation" x="2104.8000000000002" y="132.68365817091455"/>
         </scene>
         <!--ByteCodeViewController-->
         <scene sceneID="DlC-wE-av1">
             <objects>
-                <viewController storyboardIdentifier="ByteViewController" title="ByteCodeViewController" id="Arz-o5-Ecy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ByteCodeViewController" title="ByteCodeViewController" id="Arz-o5-Ecy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="opl-xd-9lu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Byte code" translatesAutoresizingMaskIntoConstraints="NO" id="6Cg-up-qBn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Byte code" translatesAutoresizingMaskIntoConstraints="NO" id="6Cg-up-qBn">
                                 <rect key="frame" x="67" y="189" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="k0n-Ck-v2z"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM9-XN-S82">
-                                <rect key="frame" x="67" y="399" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM9-XN-S82">
+                                <rect key="frame" x="67" y="399" width="253" height="161"/>
                                 <string key="text">Byte code is more abstract than block code because block code lets you visually see the code in english language while byte code is a bunch of letters and numbers. It is less abstract than binary however.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -113,22 +118,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Cg-up-qBn" firstAttribute="top" secondItem="yoc-eG-nFw" secondAttribute="top" constant="169" id="8c4-WG-RCn"/>
-                            <constraint firstItem="yoc-eG-nFw" firstAttribute="trailing" secondItem="JM9-XN-S82" secondAttribute="trailing" constant="265" id="Eu2-he-uk4"/>
-                            <constraint firstItem="6Cg-up-qBn" firstAttribute="width" secondItem="JM9-XN-S82" secondAttribute="width" id="PhP-rx-egM"/>
-                            <constraint firstItem="6Cg-up-qBn" firstAttribute="centerX" secondItem="JM9-XN-S82" secondAttribute="centerX" id="PlK-CR-cq4"/>
-                            <constraint firstItem="6Cg-up-qBn" firstAttribute="leading" secondItem="JM9-XN-S82" secondAttribute="leading" id="QKo-i6-mta"/>
-                            <constraint firstItem="yoc-eG-nFw" firstAttribute="bottom" secondItem="JM9-XN-S82" secondAttribute="bottom" constant="247" id="R3d-n3-37F"/>
-                            <constraint firstItem="6Cg-up-qBn" firstAttribute="centerX" secondItem="opl-xd-9lu" secondAttribute="centerX" id="gf5-hn-BU3"/>
-                            <constraint firstItem="JM9-XN-S82" firstAttribute="top" secondItem="6Cg-up-qBn" secondAttribute="bottom" constant="82" id="tzg-Ax-XeZ"/>
-                            <constraint firstItem="6Cg-up-qBn" firstAttribute="leading" secondItem="yoc-eG-nFw" secondAttribute="leading" constant="67" id="wa8-32-CKF"/>
+                            <constraint firstItem="yoc-eG-nFw" firstAttribute="trailing" secondItem="JM9-XN-S82" secondAttribute="trailing" constant="55" id="0aY-gq-9P0"/>
+                            <constraint firstItem="6Cg-up-qBn" firstAttribute="top" secondItem="yoc-eG-nFw" secondAttribute="top" constant="169" id="267-bj-fUu"/>
+                            <constraint firstItem="6Cg-up-qBn" firstAttribute="leading" secondItem="JM9-XN-S82" secondAttribute="leading" id="4SU-fX-aHh"/>
+                            <constraint firstItem="6Cg-up-qBn" firstAttribute="centerX" secondItem="opl-xd-9lu" secondAttribute="centerX" id="I5z-S5-2eR"/>
+                            <constraint firstItem="JM9-XN-S82" firstAttribute="top" secondItem="6Cg-up-qBn" secondAttribute="bottom" constant="82" id="Mcx-x2-ZzP"/>
+                            <constraint firstItem="yoc-eG-nFw" firstAttribute="bottom" secondItem="JM9-XN-S82" secondAttribute="bottom" constant="107" id="bKb-40-s0V"/>
+                            <constraint firstItem="6Cg-up-qBn" firstAttribute="leading" secondItem="yoc-eG-nFw" secondAttribute="leading" constant="67" id="toc-FR-Ku3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yoc-eG-nFw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYh-iF-9vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2753" y="134"/>
+            <point key="canvasLocation" x="2752.8000000000002" y="133.5832083958021"/>
         </scene>
         <!--BinaryViewController-->
         <scene sceneID="mMG-vv-vb3">
@@ -138,11 +141,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Binary" translatesAutoresizingMaskIntoConstraints="NO" id="5TR-4e-aQV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Binary" translatesAutoresizingMaskIntoConstraints="NO" id="5TR-4e-aQV">
                                 <rect key="frame" x="67" y="183" width="241" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx2-2F-Vud">
-                                <rect key="frame" x="67" y="378" width="43" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx2-2F-Vud">
+                                <rect key="frame" x="67" y="378" width="221" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="05V-dZ-UsN"/>
+                                </constraints>
                                 <string key="text">Binary is more abstract than swift because it’s raw code while swift already has lots of code in place. It is less abstract than logical gate.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -151,36 +157,37 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5TR-4e-aQV" firstAttribute="centerX" secondItem="Lx2-2F-Vud" secondAttribute="centerX" id="84Q-Na-0vk"/>
-                            <constraint firstItem="5TR-4e-aQV" firstAttribute="width" secondItem="Lx2-2F-Vud" secondAttribute="width" id="FFl-uC-KhP"/>
-                            <constraint firstItem="5TR-4e-aQV" firstAttribute="centerX" secondItem="9lj-tH-h6p" secondAttribute="centerX" id="Iqd-O7-OG3"/>
-                            <constraint firstItem="5TR-4e-aQV" firstAttribute="leading" secondItem="Lx2-2F-Vud" secondAttribute="leading" id="JIc-AU-V88"/>
-                            <constraint firstItem="PVQ-rX-jhw" firstAttribute="bottom" secondItem="Lx2-2F-Vud" secondAttribute="bottom" constant="268" id="N2C-UO-8qN"/>
-                            <constraint firstItem="5TR-4e-aQV" firstAttribute="leading" secondItem="PVQ-rX-jhw" secondAttribute="leading" constant="67" id="PQP-jx-tlm"/>
-                            <constraint firstItem="Lx2-2F-Vud" firstAttribute="top" secondItem="5TR-4e-aQV" secondAttribute="bottom" constant="67" id="WdY-bG-sW3"/>
-                            <constraint firstItem="5TR-4e-aQV" firstAttribute="top" secondItem="PVQ-rX-jhw" secondAttribute="top" constant="163" id="b5t-Qd-FyQ"/>
-                            <constraint firstItem="PVQ-rX-jhw" firstAttribute="trailing" secondItem="Lx2-2F-Vud" secondAttribute="trailing" constant="265" id="fFb-s5-CDh"/>
+                            <constraint firstItem="5TR-4e-aQV" firstAttribute="leading" secondItem="PVQ-rX-jhw" secondAttribute="leading" constant="67" id="DGC-1O-lT9"/>
+                            <constraint firstItem="5TR-4e-aQV" firstAttribute="leading" secondItem="Lx2-2F-Vud" secondAttribute="leading" id="DSm-2C-PDC"/>
+                            <constraint firstItem="5TR-4e-aQV" firstAttribute="centerX" secondItem="9lj-tH-h6p" secondAttribute="centerX" id="PX0-5b-iZB"/>
+                            <constraint firstItem="5TR-4e-aQV" firstAttribute="top" secondItem="PVQ-rX-jhw" secondAttribute="top" constant="163" id="U4g-pV-ggM"/>
+                            <constraint firstItem="Lx2-2F-Vud" firstAttribute="top" secondItem="5TR-4e-aQV" secondAttribute="bottom" constant="67" id="ei9-1N-epp"/>
+                            <constraint firstItem="PVQ-rX-jhw" firstAttribute="bottom" secondItem="Lx2-2F-Vud" secondAttribute="bottom" constant="168" id="fuW-UO-j4k"/>
+                            <constraint firstItem="PVQ-rX-jhw" firstAttribute="trailing" secondItem="Lx2-2F-Vud" secondAttribute="trailing" constant="87" id="lcZ-HC-Vga"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PVQ-rX-jhw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VM1-W0-5hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3402" y="134"/>
+            <point key="canvasLocation" x="3400.8000000000002" y="133.5832083958021"/>
         </scene>
         <!--LogicalGateViewController-->
         <scene sceneID="MCh-CI-LUn">
             <objects>
-                <viewController storyboardIdentifier="LogicalGatViewController" title="LogicalGateViewController" id="LdH-sq-Clt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogicalGateViewController" title="LogicalGateViewController" id="LdH-sq-Clt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OuJ-fJ-lPX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logical gate" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-ai-hWm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logical gate" translatesAutoresizingMaskIntoConstraints="NO" id="vfl-ai-hWm">
                                 <rect key="frame" x="50" y="181" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbU-q9-Hgq">
-                                <rect key="frame" x="50" y="379" width="240" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbU-q9-Hgq">
+                                <rect key="frame" x="50" y="379" width="240" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="3Rp-6M-YFU"/>
+                                </constraints>
                                 <string key="text">Logical Gate is more abstract than binary because it is essentially binary just with more versions. But less abstract than Block code.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -189,21 +196,20 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vfl-ai-hWm" firstAttribute="leading" secondItem="sRB-Tk-vDE" secondAttribute="leading" constant="50" id="11V-2y-cKP"/>
-                            <constraint firstItem="vfl-ai-hWm" firstAttribute="centerX" secondItem="hbU-q9-Hgq" secondAttribute="centerX" id="AfP-lh-AaE"/>
-                            <constraint firstItem="vfl-ai-hWm" firstAttribute="top" secondItem="sRB-Tk-vDE" secondAttribute="top" constant="161" id="MRn-oQ-n3L"/>
-                            <constraint firstItem="sRB-Tk-vDE" firstAttribute="bottom" secondItem="hbU-q9-Hgq" secondAttribute="bottom" constant="267" id="Zi4-re-t8l"/>
-                            <constraint firstItem="hbU-q9-Hgq" firstAttribute="top" secondItem="vfl-ai-hWm" secondAttribute="bottom" constant="70" id="mQE-6C-XUg"/>
-                            <constraint firstItem="sRB-Tk-vDE" firstAttribute="trailing" secondItem="vfl-ai-hWm" secondAttribute="trailing" constant="85" id="my3-q6-0Ss"/>
-                            <constraint firstItem="vfl-ai-hWm" firstAttribute="width" secondItem="hbU-q9-Hgq" secondAttribute="width" id="oQR-cE-mGv"/>
-                            <constraint firstItem="vfl-ai-hWm" firstAttribute="leading" secondItem="hbU-q9-Hgq" secondAttribute="leading" id="q2M-le-Vx2"/>
+                            <constraint firstItem="vfl-ai-hWm" firstAttribute="leading" secondItem="sRB-Tk-vDE" secondAttribute="leading" constant="50" id="7I8-eM-BY1"/>
+                            <constraint firstItem="vfl-ai-hWm" firstAttribute="top" secondItem="sRB-Tk-vDE" secondAttribute="top" constant="161" id="Nnx-9Z-fBs"/>
+                            <constraint firstItem="hbU-q9-Hgq" firstAttribute="top" secondItem="vfl-ai-hWm" secondAttribute="bottom" constant="70" id="P32-85-dRL"/>
+                            <constraint firstItem="vfl-ai-hWm" firstAttribute="trailing" secondItem="hbU-q9-Hgq" secondAttribute="trailing" id="Yn7-yO-cig"/>
+                            <constraint firstItem="sRB-Tk-vDE" firstAttribute="trailing" secondItem="vfl-ai-hWm" secondAttribute="trailing" constant="85" id="dDx-Ux-UH6"/>
+                            <constraint firstItem="vfl-ai-hWm" firstAttribute="leading" secondItem="hbU-q9-Hgq" secondAttribute="leading" id="fHK-tx-2aU"/>
+                            <constraint firstItem="sRB-Tk-vDE" firstAttribute="bottom" secondItem="hbU-q9-Hgq" secondAttribute="bottom" constant="176" id="oW3-yH-WYP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sRB-Tk-vDE"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccu-Nf-PBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4073" y="133"/>
+            <point key="canvasLocation" x="4072.8000000000002" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
